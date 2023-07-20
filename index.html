@@ -9,19 +9,19 @@
         <div class="card">
             <div class="search">
                 <input type="text" placeholder="enter city name" spellcheck="false">
-                <button><img src="C:\Users\DELL\Desktop\wimg\search.png"></button>
+                <button><img src="wimg/search.png"></button>
             </div>
             <div class="error">
                 <p>Invalid City Name</p>
             </div>
 
             <div class="weather">
-                <img src="C:\Users\DELL\Desktop\wimg\rain.png" class="weather-icon">
+                <img src="wimg/rain.png" class="weather-icon">
                 <h1 class="temp">22°c</h1>
                 <h2 class="city">New York</h2>
                 <div class="details">
                     <div class="col">
-                        <img src="C:\Users\DELL\Desktop\wimg\wind.png">
+                        <img src="wimg/wind.png">
                     </div>
                         <p class="wind">15 Km/h</p>
                         <p>Wind speed</p>
@@ -52,19 +52,19 @@
                 document.querySelector(".wind").innerHTML = data.wind.speed + "Km/h";
 
                 if(data.weather[0].main == "Clouds"){
-                    weatherIcon.src ="C:\Users\DELL\Desktop\wimg\clouds.png";
+                    weatherIcon.src ="wimg/clouds.png";
                 }
                 else if(data.weather[0].main == "Clear"){
-                    weatherIcon.src ="C:\Users\DELL\Desktop\wimg\clear.png";
+                    weatherIcon.src ="wimg/clear.png";
                 }
                 else if(data.weather[0].main == "Rain"){
-                    weatherIcon.src ="C:\Users\DELL\Desktop\wimg\rain.png";
+                    weatherIcon.src ="wimg/rain.png";
                 }
                 else if(data.weather[0].main == "Drizzle"){
-                    weatherIcon.src ="C:\Users\DELL\Desktop\wimg\drizzle.png";
+                    weatherIcon.src ="wimg/drizzle.png";
                 }
                 else if(data.weather[0].main == "Mist"){
-                    weatherIcon.src ="C:\Users\DELL\Desktop\wimg\mist.png";
+                    weatherIcon.src ="wimg/mist.png";
                 }
 
                 document.querySelector(".weather").style.display ="block";
